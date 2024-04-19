@@ -21,11 +21,17 @@ docker compose up -d
 
 ### Railsコマンドを使いたい時は
 
+※dockerの中のrailsを使います。ローカルのrailsは使わないこと。
+ここの文章の意味が分からなかったらメンターに確認すること。
+
 ```
 docker compose exec web bash
 
 // 以下の表示になればOK
 myapp#
+
+// 例
+myapp# rails db:migrate
 ```
 
 ### バージョン情報
